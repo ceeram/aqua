@@ -25,6 +25,23 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '392049704330827',
+                xfbml      : true,
+                version    : 'v2.3'
+            });
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/nl_NL/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
 		<!-- Header -->
 			<section id="header">
@@ -51,6 +68,12 @@
                     Het is in de jaren '60 populair geworden met de introductie van Letraset vellen<br>
                     met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals<br>
                     Aldus PageMaker die versies van Lorem Ipsum bevatten..</p>
+                <div
+                        class="fb-like"
+                        data-send="true"
+                        data-width="450"
+                        data-show-faces="true">
+                </div>
 				<footer>
 					<a href="#first" class="button style2 scrolly">Wow, hoe ziet dat er uit?</a>
 				</footer>
@@ -289,6 +312,12 @@
 				<ul class="menu">
 					<li>&copy; Aquapark fun &amp; jump Hoorn. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
+                <div
+                        class="fb-like"
+                        data-send="true"
+                        data-width="450"
+                        data-show-faces="true">
+                </div>
 			</div>
 		</section>
 
